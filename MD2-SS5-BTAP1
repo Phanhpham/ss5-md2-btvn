@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int a;
+    printf("Nhap so a: ");
+    scanf("%d", &a);
+    printf("Nhap so b: ");
+    scanf("%d", &b);
+    printf("Nhap so c: ");
+    scanf("%d", &c);
+    int x1, x2;
+    float nghiem kep = -b / 2 * a;
+    int delta = b * b - 4 * a * c;
+    float candelta = (float)squrt(b * b - 4 * a * c);
+    if (delta < 0)
+    {
+        printf("Phuong trinh vo nghiem");
+    }
+    else if (delta == 0)
+    {
+        printf("Phuong trinh co nghiem kep: %f", nghiemkep);
+    }
+    else
+    {
+        printf("Phuong trinh co 2 nghiem phan biet");
+        printf("Nghiem thu nhat la: %d, x1 = (-b- candelta)/2*a");
+        printf("Nghiem thu hai la: %d, x2 = (-b+candelta)/2*a");
+    }
+}

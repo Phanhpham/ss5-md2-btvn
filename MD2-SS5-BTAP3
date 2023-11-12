@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(){ 
+
+    int phithang = 25000;
+    int sophut;
+    int tien1, tien2, tien3, tien4, tien;
+    printf("nhap so phut goi trong thang:");
+    scanf("%d", &sophut);
+    if (sophut <= 50)
+    {
+        tien1 = sophut * 600;
+        printf("%d", tien1);
+    }
+    else if (sophut <= 150 && sophut > 50)
+    {
+        tien2 = sophut * 400;
+        printf("%d", tien2);
+    }
+    else if (sophut <= 200 && sophut > 150)
+    {
+        tien3 = sophut * 200;
+        printf("%d", tien3);
+    }
+    else if (sophut > 300)
+    {
+        tien4 = sophut * 100;
+        printf("%d", tien4);
+        tien = tien1 + tien2 + tien3;
+        printf("gia cua cuoc dien thoai la: %d", tien);
+    }
+
+    
+    }
